@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://webservice.fenoreste.com/" xmlns:ns1="http://siscoop.endpoint.ws.syc.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://webservice.fenoreste.com/">
+
+<xs:import namespace="http://siscoop.endpoint.ws.syc.com/" schemaLocation="https://192.168.99.113:8181/WsTDDImplService/WsTDDImpl?xsd=2"/>
+
+<xs:element name="wsAsignarCuentaTDDReq" type="tns:wsAsignarCuentaTDDReq"/>
+
+<xs:element name="wsAsignarCuentaTDDRes" type="tns:wsAsignarCuentaTDDRes"/>
+
+<xs:element name="wsDepositoTDDReq" type="tns:wsDepositoTDDReq"/>
+
+<xs:element name="wsDepositoTDDRes" type="tns:wsDepositoTDDRes"/>
+
+<xs:element name="wsRetiroTDDReq" type="tns:wsRetiroTDDReq"/>
+
+<xs:element name="wsRetiroTDDRes" type="tns:wsRetiroTDDRes"/>
+
+<xs:element name="wsSaldoTDDReq" type="tns:wsSaldoTDDReq"/>
+
+<xs:element name="wsSaldoTDDRes" type="tns:wsSaldoTDDRes"/>
+
+<xs:complexType name="wsDepositoTDDReq">
+<xs:sequence>
+<xs:element name="Cuenta" type="xs:string" minOccurs="0"/>
+<xs:element name="Monto" type="xs:string" minOccurs="0"/>
+<xs:element name="Idusuario" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="wsDepositoTDDRes">
+<xs:sequence>
+<xs:element name="wsDepositoTDDRes" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="wsSaldoTDDReq">
+<xs:sequence>
+<xs:element name="Cuenta" type="xs:string" minOccurs="0"/>
+<xs:element name="Idusuario" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="wsSaldoTDDRes">
+<xs:sequence>
+<xs:element name="wsSaldoTDDRes" type="ns1:BalanceQueryResponseDto" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="wsRetiroTDDReq">
+<xs:sequence>
+<xs:element name="Cuenta" type="xs:string" minOccurs="0"/>
+<xs:element name="Monto" type="xs:string" minOccurs="0"/>
+<xs:element name="Idusuario" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="wsRetiroTDDRes">
+<xs:sequence>
+<xs:element name="wsRetiroTDDRes" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="wsAsignarCuentaTDDReq">
+<xs:sequence>
+<xs:element name="Pan" type="xs:string" minOccurs="0"/>
+<xs:element name="Cuenta" type="xs:string" minOccurs="0"/>
+<xs:element name="NombreLargo" type="xs:string" minOccurs="0"/>
+<xs:element name="NombreCorto" type="xs:string" minOccurs="0"/>
+<xs:element name="Direccion" type="xs:string" minOccurs="0"/>
+<xs:element name="Colonia" type="xs:string" minOccurs="0"/>
+<xs:element name="EntidadFederativa" type="xs:string" minOccurs="0"/>
+<xs:element name="CodigoPostal" type="xs:string" minOccurs="0"/>
+<xs:element name="Rfc" type="xs:string" minOccurs="0"/>
+<xs:element name="Telefono" type="xs:string" minOccurs="0"/>
+<xs:element name="Telefono2" type="xs:string" minOccurs="0"/>
+<xs:element name="Sucursal" type="xs:string" minOccurs="0"/>
+<xs:element name="Producto" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="wsAsignarCuentaTDDRes">
+<xs:sequence>
+<xs:element name="wsAsignarCuentaTDDRes" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

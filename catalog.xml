@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="https://192.168.99.113:8181/WsTDDImplService/WsTDDImpl?wsdl" uri="xml-resources/web-service-references/WsTDDImpl_1/wsdl/192.168.99.113_8181/WsTDDImplService/WsTDDImpl.wsdl"/>
+    <system systemId="https://192.168.99.113:8181/WsTDDImplService/WsTDDImpl?wsdl=1" uri="xml-resources/web-service-references/WsTDDImpl_1/wsdl/192.168.99.113_8181/WsTDDImplService/WsTDDImpl.wsdl_1.wsdl"/>
+    <system systemId="https://192.168.99.113:8181/WsTDDImplService/WsTDDImpl?xsd=1" uri="xml-resources/web-service-references/WsTDDImpl_1/wsdl/192.168.99.113_8181/WsTDDImplService/WsTDDImpl.xsd_1.xsd"/>
+    <system systemId="https://192.168.99.113:8181/WsTDDImplService/WsTDDImpl?xsd=2" uri="xml-resources/web-service-references/WsTDDImpl_1/wsdl/192.168.99.113_8181/WsTDDImplService/WsTDDImpl.xsd_2.xsd"/>
+</catalog>
